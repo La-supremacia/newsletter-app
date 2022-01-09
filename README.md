@@ -21,3 +21,5 @@ En la carpeta del proyecto que quieras correr (sea react o node), encontrarás e
 
 ### Notas adicionales:
 * La app de react en development está configurada con un proxy para conectarse al servicio de node en el puerto *4000*, por ello, deberás crear el .env apuntando a ese puerto en la carpeta del proyecto **api-gateway**
+
+### FIN
