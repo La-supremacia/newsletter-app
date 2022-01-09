@@ -1,0 +1,22 @@
+{
+  "name": "newsletter-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "workspaces": [
+    "app",
+    "api-gateway"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspace=app",
+    "start": "npm run start --workspace=api-gateway",
+    "dev:api": "npm run build && npm run dev --workspace=api-gateway"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  }
+}
