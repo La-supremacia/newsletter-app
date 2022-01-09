@@ -7,11 +7,17 @@
     "app",
     "api-gateway"
   ],
+  "engines": {
+    "npm": "7.20.3"
+  },
   "main": "index.js",
   "scripts": {
     "build": "npm run build --workspace=app",
     "start": "npm run start --workspace=api-gateway",
     "dev:api": "npm run build && npm run dev --workspace=api-gateway"
+  },
+  "eslintConfig": {
+    "ignorePatterns": "build"
   },
   "keywords": [],
   "author": "",
