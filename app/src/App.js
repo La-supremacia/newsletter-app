@@ -1,11 +1,15 @@
 import React from 'react'
-import { Button } from 'grommet'
+import { Routes, Route } from 'react-router-dom'
+import Login from './Pages/Login'
 
 const App = () => {
 	return (
-		<div>
-			<Button primary label="¡Hola Mundo!" />
-		</div>
+		<>
+			<Routes>
+				<Route path="login" element={<Login />} />
+				<Route path="register" element={<Login />} />
+			</Routes>
+		</>
 	)
 }
 
