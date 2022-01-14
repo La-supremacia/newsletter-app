@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import adorno from '../Images/login-adorno.svg';
+import logo from '../Images/login-logo.svg';
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet'
 
 const Login = () => {
@@ -22,11 +24,17 @@ const Login = () => {
 							{size === 'medium' ? (
 								<Box
 									gridArea="nav"
-									background="light-5"
+									background="#81FCED"
 									justify="center"
 									align="center"
 								>
-									<div className="login-welcome">imagen</div>
+									<div className="login-welcome">
+										<div className="login-img">
+											<img className="login-img-image" src={logo} alt="Logo de adorno" />
+										</div>
+										<div className="login-footer" style={{backgroundImage:'url(' + adorno + ')'}}>
+										</div>
+									</div>
 								</Box>
 							) : null}
 							<Box
