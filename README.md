@@ -1,5 +1,5 @@
 
-# Monorepo newsletter-app HAKIIARR
+# Monorepo newsletter-app 
 
 ## Inicializando el proyecto como un monorepo:
 
