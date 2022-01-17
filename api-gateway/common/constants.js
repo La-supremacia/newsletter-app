@@ -9,6 +9,12 @@ const endpointDefinitions = {
 			path: 'sign-up',
 		},
 	},
+	organization: {
+		baseUrl: config.microservices.organization,
+		create: {
+			path: 'organization',
+		},
+	},
 }
 
 module.exports = endpointDefinitions
