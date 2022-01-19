@@ -19,6 +19,8 @@ MORADOGROMMET #7D4CDB
 font-family: 'Roboto Mono', monospace;
 */
 
+/*LOGIN*/
+
 .login-welcome{
 	width: 100%;
 	height: 100%;
@@ -42,4 +44,26 @@ font-family: 'Roboto Mono', monospace;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0;
+}
+
+/*BUTTONMENU*/
+
+.button-menu-container{
+	background-color: #7D4CDB;
+	height: 50px;
+	width: 40px;
+	position: fixed;
+	left: 0;
+	top: 15px;
+	cursor: pointer;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	padding-right: 10px;
+}
+
+.button-menu-icon{
+	fill: #fff !important;
 }
