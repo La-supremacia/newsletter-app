@@ -13,6 +13,7 @@ code {
 /*
 AZULCLARO #81FCED
 MORADOGROMMET #7D4CDB
+moradooscuro #5E21BC
 */
 
 /*
@@ -21,35 +22,35 @@ font-family: 'Roboto Mono', monospace;
 
 /*LOGIN*/
 
-.login-welcome{
+.login-welcome {
 	width: 100%;
 	height: 100%;
 }
 
-.login-img{
+.login-img {
 	height: 60%;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
-.login-img-image{
+.login-img-image {
 	position: relative;
-    top: 60px;
+	top: 60px;
 }
 
-.login-footer{
+.login-footer {
 	width: 100%;
-    height: 40%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 0;
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 0;
 }
 
 /*BUTTONMENU*/
 
-.button-menu-container{
-	background-color: #81FCED;
+.button-menu-container {
+	background-color: #81fced;
 	height: 50px;
 	width: 40px;
 	position: fixed;
@@ -60,12 +61,12 @@ font-family: 'Roboto Mono', monospace;
 	border-bottom-right-radius: 24px;
 	display: flex;
 	align-items: center;
-	justify-content:flex-end;
+	justify-content: flex-end;
 	padding-right: 10px;
 }
 
-.sidebar-button-menu-container{
-	background-color: #81FCED;
+.sidebar-button-menu-container {
+	background-color: #81fced;
 	height: 50px;
 	width: 50px;
 	position: relative;
@@ -76,31 +77,80 @@ font-family: 'Roboto Mono', monospace;
 	border-bottom-right-radius: 24px;
 	display: flex;
 	align-items: center;
-	justify-content:flex-end;
-	padding-right: 10px;	
+	justify-content: flex-end;
+	padding-right: 10px;
 }
 
-.button-menu-icon{
+.button-menu-icon {
 	fill: #fff !important;
 }
 
-.header{
+.header {
 	height: 70px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	padding-right: 1rem;
-	font-family: 'Roboto Mono', monospace;
-	color: #7D4CDB;
+	font-family: Roboto Mono;
+	font-style: normal;
+	line-height: 40px;
+	color: #5e21bc;
 }
 
-.header-container{
+.header-container {
 	display: flex;
 	align-items: center;
 }
 
-.header-logo{
+.header-logo {
 	margin-left: 0.5rem;
 	height: 45px;
 	width: 45px;
+}
+
+.footer {
+	background-color: #5e21bc;
+	height: 120px;
+	font-family: Roboto Mono;
+	color: white;
+	flex-direction: column;
+}
+
+.footer-content {
+	height: 70%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.footer-right {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icon {
+	margin-top: 30px;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-right: 2rem;
+}
+
+.footer-link {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.footer-menu-container {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
 }
