@@ -1,10 +1,11 @@
 import React from 'react'
 import Sidebar from '../Layout/Sidebar'
+import Header from '../Layout/Header'
 
 const Home = () => {
 	return (
 		<div>
-			<h1>Home</h1>
+			<Header />
 			<Sidebar />
 		</div>
 	)

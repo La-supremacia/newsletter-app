@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Button, Layer, Text } from 'grommet'
-import { Next } from 'grommet-icons'
+import { Next, Previous } from 'grommet-icons'
 
 const SidebarLayer = ({ onClose }) => (
 	<Layer position="left" full="vertical" modal={false} plain={true}>
@@ -10,6 +10,9 @@ const SidebarLayer = ({ onClose }) => (
 			background="neutral-2"
 			pad={{ left: 'medium', right: 'large', vertical: 'medium' }}
 		>
+			<div className="sidebar-button-menu-container" onClick={onClose}>
+				<Previous color="#fff" />
+			</div>
 			<Box pad={{ horizontal: 'medium', vertical: 'small' }}>
 				<Text size="large">Title</Text>
 			</Box>
