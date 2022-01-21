@@ -38,9 +38,12 @@ const Login = () => {
 											Register
 										</Link>
 									) : (
-										<Link onClick={() => setIsLoginRoute(true)} to="/login">
+										<>
 											<RegisterForm />
-										</Link>
+											<Link onClick={() => setIsLoginRoute(true)} to="/login">
+												Ya tengo cuenta
+											</Link>
+										</>
 									)}
 								</main>
 							</Box>
