@@ -1,6 +1,6 @@
 import React from 'react'
-import icon from '../Images/footer-icon.svg'
 import { Link } from 'react-router-dom'
+import { Mail, Instagram, Facebook } from 'grommet-icons'
 
 const Footer = () => {
 	return (
@@ -25,7 +25,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="footer-up-icon">
-					<img className="footer-icon" src={icon} alt="icon-up" />
+					<Mail color="#fff" size="35px" />
+					<Instagram className="ml" color="#fff" size="27px" />
+					<Facebook className="ml" color="#fff" size="25px" />
 				</div>
 			</div>
 			<div className="footer-right">

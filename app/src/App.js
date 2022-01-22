@@ -1,16 +1,20 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Login from './Pages/Login'
-import Home from './Pages/Home'
+import Contacts from './Pages/Contacts'
 
 const App = () => {
-	const user = true;
+	const user = true
 	return (
 		<>
 			<Routes>
-				<Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
+				<Route
+					path="/"
+					element={user ? <Navigate to="/contacts" /> : <Navigate to="/login" />}
+				/>
 				<Route path="login" element={<Login />} />
 				<Route path="register" element={<Login />} />
+				<Route path="contacts" element={<Contacts />} />
 			</Routes>
 		</>
 	)

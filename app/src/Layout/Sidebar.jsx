@@ -38,7 +38,7 @@ const Sidebar = () => {
 		layer = <SidebarLayer onClose={() => setLayerType(undefined)} />
 	}
 	return (
-		<div style={{ display: 'flex', justifyContent: 'center' }}>
+		<div style={{ display: 'flex', justifyContent: 'center', height: 0 }}>
 			<Box key="Sidebar" margin="small">
 				<div
 					className="button-menu-container"

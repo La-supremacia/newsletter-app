@@ -20,6 +20,18 @@ moradooscuro #5E21BC
 font-family: 'Roboto Mono', monospace;
 */
 
+/*GENERAL*/
+
+.ml {
+	margin-left: 2rem;
+}
+
+.general-title {
+	font-size: 25px;
+	font-family: Roboto Mono;
+	margin: 0;
+}
+
 /*LOGIN*/
 
 .login-welcome {
@@ -147,10 +159,38 @@ font-family: 'Roboto Mono', monospace;
 .footer-link {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	font-weight: bold !important;
 }
 
 .footer-menu-container {
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
+}
+
+.footer-up-icon {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.contacts-main {
+	height: 80vh;
+}
+
+.contacts-title-container {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-table-container {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 }
