@@ -70,7 +70,9 @@ const Contacts = () => {
 					Campaign
 				</Text>
 			),
-			render: () => (
+			render: (datum) => {
+				console.log("datum",datum)
+				return(
 				<Box fill align="center" justify="start" pad="xsmall">
 					<Select
 						multiple
@@ -107,7 +109,7 @@ const Contacts = () => {
 						)}
 					</Select>
 				</Box>
-			),
+			)},
 		},
 	]
 	const DATA = [
