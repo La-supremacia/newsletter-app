@@ -73,6 +73,7 @@ font-family: 'Roboto Mono', monospace;
 	border-bottom-right-radius: 24px;
 	display: flex;
 	align-items: center;
+	z-index: 1;
 	justify-content: flex-end;
 	padding-right: 10px;
 }
@@ -183,6 +184,16 @@ font-family: 'Roboto Mono', monospace;
 	min-height: 80vh;
 }
 
+.contacts-show{
+	display: flex;
+	align-items: center;
+	margin-left: 2.5rem;
+}
+
+.contacts-show-select-container{
+	margin-left: 1rem;
+}
+
 .contacts-title-container {
 	display: flex;
 	justify-content: center;
@@ -191,6 +202,15 @@ font-family: 'Roboto Mono', monospace;
 .contact-table-container {
 	margin-left: 2rem;
 	margin-right: 2rem;
-	margin-top: 2rem;
+	margin-top: 0rem;
 	margin-bottom: 1rem;
+}
+
+.contacts-barup{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts-button-add{
+	margin-right: 2.5rem;
 }

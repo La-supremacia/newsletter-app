@@ -1,11 +1,11 @@
 import React from 'react'
 import { DataTable, Box } from 'grommet'
 
-const Table = ({ columns, data }) => (
+const Table = ({ columns, data, show = 5 }) => (
 	<Box align="center">
 		<DataTable
 			sortable="true"
-			step={5}
+			step={show}
 			columns={columns}
 			data={data}
 			size="medium"
