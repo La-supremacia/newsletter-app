@@ -213,4 +213,10 @@ font-family: 'Roboto Mono', monospace;
 
 .contacts-button-add{
 	margin-right: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.contact-pointer{
+	cursor: pointer;
 }

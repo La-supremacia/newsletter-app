@@ -1,14 +1,14 @@
 import React from 'react'
-import { Layer, Box, Text, Button } from 'grommet'
+import { Layer, Box, Button } from 'grommet'
 import { FormClose } from 'grommet-icons'
 
-const Modal = () => {
+const Modal = ({children, label="Add",icon, primary=true}) => {
 	const [open, setOpen] = React.useState(false)
 	const onOpen = () => setOpen(true)
 	const onClose = () => setOpen(undefined)
 	return (
-		<div>
-			<Button label="Open layer" onClick={onOpen} />
+		<div className="contacts-button-add">
+			<Button label={label} icon={icon} onClick={onOpen} primary={primary} />
 			{open && (
 				<Layer onClickOutside={onClose} onEsc={onClose}>
 					<Box
@@ -19,7 +19,7 @@ const Modal = () => {
 						fill
 					>
 						<Button alignSelf="end" icon={<FormClose />} onClick={onClose} />
-						<Text>Hi, I am a Layer!</Text>
+						{children}
 					</Box>
 				</Layer>
 			)}

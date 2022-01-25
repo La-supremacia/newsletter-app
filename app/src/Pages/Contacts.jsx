@@ -4,8 +4,10 @@ import Sidebar from '../Layout/Sidebar'
 import Footer from '../Layout/Footer'
 import Table from '../Components/Table'
 import Modal from '../Components/Modal'
-import { Text, Box, CheckBox, Select, Button } from 'grommet'
+import AddNewContact from '../Components/AddNewContact'
+import { Text, Box, CheckBox, Select } from 'grommet'
 import { Add } from 'grommet-icons'
+import ModalContactDetails from '../Components/ModalContactDetails'
 
 const Option = React.memo(({ value, selected }) => (
 	<Box direction="row" gap="small" align="center" pad="xsmall">
@@ -41,6 +43,13 @@ const Contacts = () => {
 				</Text>
 			),
 			primary: true,
+			render: (datum) => {
+				return (
+					<>
+						<ModalContactDetails type={'name'} datum={datum} />
+					</>
+				)
+			},
 		},
 		{
 			property: 'Calories',
@@ -49,6 +58,13 @@ const Contacts = () => {
 					Last Name
 				</Text>
 			),
+			render: (datum) => {
+				return (
+					<>
+						<ModalContactDetails type={'Calories'} datum={datum} />
+					</>
+				)
+			},
 		},
 		{
 			property: 'Fat',
@@ -57,6 +73,13 @@ const Contacts = () => {
 					Telephone
 				</Text>
 			),
+			render: (datum) => {
+				return (
+					<>
+						<ModalContactDetails type={'Fat'} datum={datum} />
+					</>
+				)
+			},
 		},
 		{
 			property: 'Carbs',
@@ -65,6 +88,13 @@ const Contacts = () => {
 					Email
 				</Text>
 			),
+			render: (datum) => {
+				return (
+					<>
+						<ModalContactDetails type={'Carbs'} datum={datum} />
+					</>
+				)
+			},
 		},
 		{
 			property: 'campaign',
@@ -224,7 +254,6 @@ const Contacts = () => {
 						My Contacts
 					</h2>
 				</div>
-				<Modal/>
 				<div className="contacts-barup">
 					<div className="contacts-show">
 						<h3 style={{ fontWeight: '400' }}>Show: </h3>
@@ -237,9 +266,9 @@ const Contacts = () => {
 							/>
 						</div>
 					</div>
-					<div className='contacts-button-add'>
-						<Button icon={<Add />} label="New Contact" onClick={() => {}} primary />
-					</div>
+					<Modal icon={<Add />} label={'New Contact'}>
+						<AddNewContact />
+					</Modal>
 				</div>
 				<div className="contact-table-container">
 					<Table columns={columns} data={DATA} show={show} />
