@@ -52,7 +52,7 @@ const Contacts = () => {
 			},
 		},
 		{
-			property: 'Calories',
+			property: 'lastName',
 			header: (
 				<Text color="brand" style={{ fontWeight: 'bold' }}>
 					Last Name
@@ -61,28 +61,13 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'Calories'} datum={datum} />
+						<ModalContactDetails type={'lastName'} datum={datum} />
 					</>
 				)
 			},
 		},
 		{
-			property: 'Fat',
-			header: (
-				<Text color="brand" style={{ fontWeight: 'bold' }}>
-					Telephone
-				</Text>
-			),
-			render: (datum) => {
-				return (
-					<>
-						<ModalContactDetails type={'Fat'} datum={datum} />
-					</>
-				)
-			},
-		},
-		{
-			property: 'Carbs',
+			property: 'email',
 			header: (
 				<Text color="brand" style={{ fontWeight: 'bold' }}>
 					Email
@@ -91,7 +76,22 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'Carbs'} datum={datum} />
+						<ModalContactDetails type={'email'} datum={datum} />
+					</>
+				)
+			},
+		},
+		{
+			property: 'telephone',
+			header: (
+				<Text color="brand" style={{ fontWeight: 'bold' }}>
+					Telephone
+				</Text>
+			),
+			render: (datum) => {
+				return (
+					<>
+						<ModalContactDetails type={'telephone'} datum={datum} />
 					</>
 				)
 			},
@@ -149,97 +149,97 @@ const Contacts = () => {
 	const DATA = [
 		{
 			name: 'GingerBread',
-			Calories: '356',
-			Fat: '16',
-			Carbs: '49',
+			lastName: '356',
+			email: '16',
+			telephone: '49',
 			percent: 25,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Frozen Yoghurt',
-			Calories: '159',
-			Fat: '6',
-			Carbs: '24',
+			lastName: '159',
+			email: '6',
+			telephone: '24',
 			percent: 72,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: ' Vanilla Ice Cream',
-			Calories: '205',
-			Fat: '32',
-			Carbs: '43',
+			lastName: '205',
+			email: '32',
+			telephone: '43',
 			percent: 31,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Chicken',
-			Calories: '150',
-			Fat: '10',
-			Carbs: '12',
+			lastName: '150',
+			email: '10',
+			telephone: '12',
 			percent: 95,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Soda',
-			Calories: '160',
-			Fat: '0',
-			Carbs: '41',
+			lastName: '160',
+			email: '0',
+			telephone: '41',
 			percent: 10,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Apple Juice',
-			Calories: '210',
-			Fat: '0',
-			Carbs: '28',
+			lastName: '210',
+			email: '0',
+			telephone: '28',
 			percent: 40,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'GingerBread',
-			Calories: '356',
-			Fat: '16',
-			Carbs: '49',
+			lastName: '356',
+			email: '16',
+			telephone: '49',
 			percent: 25,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Frozen Yoghurt',
-			Calories: '159',
-			Fat: '6',
-			Carbs: '24',
+			lastName: '159',
+			email: '6',
+			telephone: '24',
 			percent: 72,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: ' Vanilla Ice Cream',
-			Calories: '205',
-			Fat: '32',
-			Carbs: '43',
+			lastName: '205',
+			email: '32',
+			telephone: '43',
 			percent: 31,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Chicken',
-			Calories: '150',
-			Fat: '10',
-			Carbs: '12',
+			lastName: '150',
+			email: '10',
+			telephone: '12',
 			percent: 95,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Soda',
-			Calories: '160',
-			Fat: '0',
-			Carbs: '41',
+			lastName: '160',
+			email: '0',
+			telephone: '41',
 			percent: 10,
 			campaign: [1, 2, 3],
 		},
 		{
 			name: 'Apple Juice',
-			Calories: '210',
-			Fat: '0',
-			Carbs: '28',
+			lastName: '210',
+			email: '0',
+			telephone: '28',
 			percent: 40,
 			campaign: [1, 2, 3],
 		},
