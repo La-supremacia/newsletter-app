@@ -184,13 +184,13 @@ font-family: 'Roboto Mono', monospace;
 	min-height: 80vh;
 }
 
-.contacts-show{
+.contacts-show {
 	display: flex;
 	align-items: center;
 	margin-left: 2.5rem;
 }
 
-.contacts-show-select-container{
+.contacts-show-select-container {
 	margin-left: 1rem;
 }
 
@@ -206,17 +206,45 @@ font-family: 'Roboto Mono', monospace;
 	margin-bottom: 1rem;
 }
 
-.contacts-barup{
+.contacts-barup {
 	display: flex;
 	justify-content: space-between;
 }
 
-.contacts-button-add{
+.contacts-button-add {
 	margin-right: 2.5rem;
 	display: flex;
 	align-items: center;
 }
 
-.contact-pointer{
+.contact-pointer {
 	cursor: pointer;
+}
+
+.modal-contact-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+}
+
+.modal-contact-span-container {
+	background-color: #ababab;
+	width: 100%;
+	height: 0.5px;
+}
+
+.add-new-contact-form {
+	padding: 1rem;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.add-new-label {
+	height: 35px;
+	font-size: 16px !important;
+}
+
+.modal-contact-margin {
+	margin-bottom: 0.5rem;
 }
