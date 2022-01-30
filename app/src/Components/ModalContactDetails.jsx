@@ -16,19 +16,32 @@ import {
 import { deepMerge } from 'grommet/utils'
 import { FormClose } from 'grommet-icons'
 
-const ModalContactDetails = ({ datum, type }) => {
+const ModalContactDetails = ({
+	datum,
+	datumName,
+	datumLastName,
+	datumTelephone,
+	datumEmail,
+	type,
+}) => {
 	const [open, setOpen] = useState(false)
 	const [edit, setEdit] = useState(false)
 	const onOpen = () => setOpen(true)
 	const onClose = () => setOpen(undefined)
-	const [name, setName] = useState(datum.name)
-	const [email, setEmail] = useState(datum.email)
-	const [lastname, setLastName] = useState(datum.lastName)
-	const [telephone, setTelephone] = useState(datum.telephone)
+	const [name, setName] = useState('')
+	const [email, setEmail] = useState('')
+	const [lastname, setLastName] = useState('')
+	const [telephone, setTelephone] = useState('')
 	return (
 		<div>
 			<Text
-				onClick={onOpen}
+				onClick={() => {
+					onOpen()
+					setName(datum.name)
+					setLastName(datum.lastName)
+					setTelephone(datum.telephone)
+					setEmail(datum.email)
+				}}
 				style={{ fontWeight: type === 'name' ? 'bold' : 'normal' }}
 				className="contact-pointer"
 			>
@@ -52,7 +65,7 @@ const ModalContactDetails = ({ datum, type }) => {
 						>
 							<div className="modal-contact-header">
 								<Heading level={3} margin="none">
-									{edit ? 'Edit Contact' : datum.name}
+									{edit ? 'Edit Contact' : datumName}
 								</Heading>
 								<Button
 									alignSelf="end"
@@ -83,7 +96,7 @@ const ModalContactDetails = ({ datum, type }) => {
 													/>
 												</TableCell>
 											) : (
-												<TableCell size="small">{datum.name}</TableCell>
+												<TableCell size="small">{datumName}</TableCell>
 											)}
 										</TableRow>
 										<TableRow>
@@ -102,7 +115,7 @@ const ModalContactDetails = ({ datum, type }) => {
 													/>
 												</TableCell>
 											) : (
-												<TableCell size="small">{datum.lastName}</TableCell>
+												<TableCell size="small">{datumLastName}</TableCell>
 											)}
 										</TableRow>
 										<TableRow>
@@ -122,7 +135,7 @@ const ModalContactDetails = ({ datum, type }) => {
 													/>
 												</TableCell>
 											) : (
-												<TableCell>{datum.email}</TableCell>
+												<TableCell>{datumEmail}</TableCell>
 											)}
 										</TableRow>
 										<TableRow>
@@ -141,7 +154,7 @@ const ModalContactDetails = ({ datum, type }) => {
 													/>
 												</TableCell>
 											) : (
-												<TableCell>{datum.telephone}</TableCell>
+												<TableCell>{datumTelephone}</TableCell>
 											)}
 										</TableRow>
 									</TableBody>

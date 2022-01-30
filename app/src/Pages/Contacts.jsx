@@ -46,7 +46,14 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'name'} datum={datum} />
+						<ModalContactDetails
+							type={'name'}
+							datum={datum}
+							datumName={datum.name}
+							datumLastName={datum.lastName}
+							datumTelephone={datum.telephone}
+							datumEmail={datum.email}
+						/>
 					</>
 				)
 			},
@@ -61,7 +68,14 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'lastName'} datum={datum} />
+						<ModalContactDetails
+							type={'lastName'}
+							datum={datum}
+							datumName={datum.name}
+							datumLastName={datum.lastName}
+							datumTelephone={datum.telephone}
+							datumEmail={datum.email}
+						/>
 					</>
 				)
 			},
@@ -76,7 +90,14 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'email'} datum={datum} />
+						<ModalContactDetails
+							type={'email'}
+							datum={datum}
+							datumName={datum.name}
+							datumLastName={datum.lastName}
+							datumTelephone={datum.telephone}
+							datumEmail={datum.email}
+						/>
 					</>
 				)
 			},
@@ -91,7 +112,14 @@ const Contacts = () => {
 			render: (datum) => {
 				return (
 					<>
-						<ModalContactDetails type={'telephone'} datum={datum} />
+						<ModalContactDetails
+							type={'telephone'}
+							datum={datum}
+							datumName={datum.name}
+							datumLastName={datum.lastName}
+							datumTelephone={datum.telephone}
+							datumEmail={datum.email}
+						/>
 					</>
 				)
 			},
