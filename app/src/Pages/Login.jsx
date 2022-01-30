@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet'
+import RegisterForm from '../Components/RegisterForm'
 
 const Login = () => {
 	const [isLoginRouter, setIsLoginRoute] = useState(true)
@@ -23,27 +24,26 @@ const Login = () => {
 								<Box
 									gridArea="nav"
 									background="light-5"
+									className="bg-gradient"
 									justify="center"
 									align="center"
 								>
 									<div className="login-welcome">imagen</div>
 								</Box>
 							) : null}
-							<Box
-								gridArea="main"
-								background="light-2"
-								justify="center"
-								align="center"
-							>
+							<Box gridArea="main" background="white" justify="center" align="center">
 								<main className="login-form">
 									{isLoginRouter ? (
 										<Link onClick={() => setIsLoginRoute(false)} to="/register">
-											Login
-										</Link>
-									) : (
-										<Link onClick={() => setIsLoginRoute(true)} to="/login">
 											Register
 										</Link>
+									) : (
+										<>
+											<RegisterForm />
+											<Link onClick={() => setIsLoginRoute(true)} to="/login">
+												Ya tengo cuenta
+											</Link>
+										</>
 									)}
 								</main>
 							</Box>
