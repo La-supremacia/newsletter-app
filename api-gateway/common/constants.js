@@ -15,6 +15,24 @@ const endpointDefinitions = {
 			path: 'organization',
 		},
 	},
+	contacts: {
+		baseUrl: config.microservices.contacts,
+		create: {
+			path: 'contacts/',
+		},
+		read: {
+			path: 'contacts/',
+		},
+		search: {
+			path: 'contacts/search/',
+		},
+		update: {
+			path: 'contacts/',
+		},
+		delete: {
+			path: 'contacts/',
+		},
+	},
 }
 
 module.exports = endpointDefinitions
