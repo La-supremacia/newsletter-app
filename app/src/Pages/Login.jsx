@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import adorno from '../Images/login-adorno.svg';
-import logo from '../Images/login-logo.svg';
+import { Link } from 'react-router-dom'
+import adorno from '../Images/login-adorno.svg'
+import logo from '../Images/login-logo.svg'
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet'
+import RegisterForm from '../Components/RegisterForm'
 
 const Login = () => {
 	const [isLoginRouter, setIsLoginRoute] = useState(true)
@@ -24,7 +25,8 @@ const Login = () => {
 							{size === 'medium' ? (
 								<Box
 									gridArea="nav"
-									background="#81FCED"
+									background="light-5"
+									className="bg-gradient"
 									justify="center"
 									align="center"
 								>
@@ -32,26 +34,26 @@ const Login = () => {
 										<div className="login-img">
 											<img className="login-img-image" src={logo} alt="Logo de adorno" />
 										</div>
-										<div className="login-footer" style={{backgroundImage:'url(' + adorno + ')'}}>
-										</div>
+										<div
+											className="login-footer"
+											style={{ backgroundImage: 'url(' + adorno + ')' }}
+										></div>
 									</div>
 								</Box>
 							) : null}
-							<Box
-								gridArea="main"
-								background="light-2"
-								justify="center"
-								align="center"
-							>
+							<Box gridArea="main" background="white" justify="center" align="center">
 								<main className="login-form">
 									{isLoginRouter ? (
 										<Link onClick={() => setIsLoginRoute(false)} to="/register">
-											Login
-										</Link>
-									) : (
-										<Link onClick={() => setIsLoginRoute(true)} to="/login">
 											Register
 										</Link>
+									) : (
+										<>
+											<RegisterForm />
+											<Link onClick={() => setIsLoginRoute(true)} to="/login">
+												Ya tengo cuenta
+											</Link>
+										</>
 									)}
 								</main>
 							</Box>
