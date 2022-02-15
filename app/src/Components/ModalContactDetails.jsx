@@ -9,11 +9,9 @@ import {
 	TableRow,
 	TableCell,
 	Heading,
-	grommet,
 	Form,
 	TextInput,
 } from 'grommet'
-import { deepMerge } from 'grommet/utils'
 import { FormClose } from 'grommet-icons'
 
 const ModalContactDetails = ({
