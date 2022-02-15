@@ -4,6 +4,7 @@ import adorno from '../Images/login-adorno.svg'
 import logo from '../Images/login-logo.svg'
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet'
 import RegisterForm from '../Components/RegisterForm'
+import LoginForm from '../Components/LoginForm'
 
 const Login = () => {
 	const [isLoginRouter, setIsLoginRoute] = useState(true)
@@ -25,7 +26,6 @@ const Login = () => {
 							{size === 'medium' ? (
 								<Box
 									gridArea="nav"
-									background="light-5"
 									className="bg-gradient"
 									justify="center"
 									align="center"
@@ -44,9 +44,16 @@ const Login = () => {
 							<Box gridArea="main" background="white" justify="center" align="center">
 								<main className="login-form">
 									{isLoginRouter ? (
-										<Link onClick={() => setIsLoginRoute(false)} to="/register">
-											Register
-										</Link>
+										<>
+											<LoginForm />
+											<Link
+												className="login-form-link"
+												onClick={() => setIsLoginRoute(false)}
+												to="/register"
+											>
+												Register
+											</Link>
+										</>
 									) : (
 										<>
 											<RegisterForm />

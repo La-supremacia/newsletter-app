@@ -16,7 +16,7 @@
 
 /* Clases */
 .bg-gradient {
-	background: linear-gradient(135deg, var(--azulClaro) 20%, var(--morado) 80%);
+	background: #81fced;
 }
 
 /* Etiquetas */
@@ -268,4 +268,60 @@ font-family: 'Roboto Mono', monospace;
 
 .modal-contact-margin {
 	margin-bottom: 0.5rem;
+}
+
+/*FORMULARIO DE LOGIN*/
+
+.login-form {
+	width: 100%;
+	height: 100%;
+}
+
+.loginform-mt {
+	height: 20%;
+}
+
+.loginform-container {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+}
+
+.loginform-eslogan {
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	font-family: Roboto Mono;
+	margin-left: 15%;
+	margin-right: 15%;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+.loginform-formulario {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
+}
+
+.login-form-link {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #7d4cdb;
+}
+
+.login-form-link:hover {
+	font-weight: bold !important;
+}
+
+.login-form-label {
+	border-bottom: 2px solid #9060eb !important;
+}
+
+.loginform-header{
+	display:flex;
+	justify-content:center;
 }
