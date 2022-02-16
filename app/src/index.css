@@ -311,17 +311,81 @@ font-family: 'Roboto Mono', monospace;
 	justify-content: center;
 	text-decoration: none;
 	color: #7d4cdb;
+	font-weight: bold !important;
 }
 
 .login-form-link:hover {
-	font-weight: bold !important;
+	text-decoration: underline;
 }
 
 .login-form-label {
 	border-bottom: 2px solid #9060eb !important;
+	font-weight: normal;
+	font-size: 15px;
+	margin-bottom: 0 !important;
 }
 
-.loginform-header{
-	display:flex;
-	justify-content:center;
+.loginform-header {
+	display: flex;
+	justify-content: center;
+}
+
+.loginform-header-text {
+	font-family: Roboto Mono;
+	font-weight: 300 !important;
+	font-size: 30px !important;
+	margin: 0 !important;
+}
+
+.loginform-border {
+	border: 3px solid #60ebe1;
+	width: 40%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+	border-radius: 20px;
+}
+
+.loginform-button-submit {
+	padding-left: 2em !important;
+	padding-right: 2em !important;
+	font-weight: 500 !important;
+}
+
+.registerform-border {
+	border: 3px solid #60ebe1;
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+}
+
+.register-form-label {
+	margin: 0 !important;
+}
+
+.register-button-back {
+	font-weight: 500 !important;
+}
+
+.register-text-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto Mono;
+	font-weight: 400 !important;
+}
+
+.register-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginform-button-text {
+	font-family: Roboto Mono;
+	font-weight: 400 !important;
 }

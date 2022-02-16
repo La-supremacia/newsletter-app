@@ -51,14 +51,18 @@ const Login = () => {
 												onClick={() => setIsLoginRoute(false)}
 												to="/register"
 											>
-												Register
+												I don’t have an account
 											</Link>
 										</>
 									) : (
 										<>
 											<RegisterForm />
-											<Link onClick={() => setIsLoginRoute(true)} to="/login">
-												Ya tengo cuenta
+											<Link
+												className="login-form-link"
+												onClick={() => setIsLoginRoute(true)}
+												to="/login"
+											>
+												I have an account
 											</Link>
 										</>
 									)}
