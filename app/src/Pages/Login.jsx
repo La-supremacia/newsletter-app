@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import adorno from '../Images/login-adorno.svg'
 import logo from '../Images/login-logo.svg'
@@ -8,7 +8,11 @@ import LoginForm from '../Components/LoginForm'
 
 const Login = () => {
 	const [isLoginRouter, setIsLoginRoute] = useState(true)
-
+	useEffect(() => {
+		if (window.location.pathname === '/register') {
+			setIsLoginRoute(false)
+		}
+	}, [])
 	return (
 		<div>
 			<Grommet full>

@@ -4,11 +4,10 @@ import AuthReducer from './authReducer'
 
 const AuthState = (props) => {
 	const initialState = {
-		token: localStorage.getItem('token'),
-		autenticado: null,
-		usuario: null,
-		mensaje: null,
-		cargando: true,
+		auth: localStorage.getItem('token'),
+		user: null,
+		msj: null,
+		isLoading: true,
 	}
 
 	const [state, dispatch] = useReducer(AuthReducer, initialState)
@@ -16,11 +15,10 @@ const AuthState = (props) => {
 	return (
 		<AuthContext.Provider
 			value={{
-				token: state.token,
-				autenticado: state.autenticado,
-				usuario: state.usuario,
-				mensaje: state.mensaje,
-				cargando: state.cargando,
+				auth: state.auth,
+				user: state.user,
+				msj: state.msj,
+				isLoading: state.isLoading,
 			}}
 		>
 			{props.children}
