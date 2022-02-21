@@ -1,4 +1,4 @@
-import { Box, Button, Form, FormField, Heading, Text, TextInput } from 'grommet'
+import { Box, Button, Form, FormField, Text, TextInput } from 'grommet'
 import React, { useState } from 'react'
 import { FormNext, FormPrevious } from 'grommet-icons'
 
@@ -12,9 +12,7 @@ const RegisterForm = () => {
 			<div className="loginform-formulario">
 				<Form className="registerform-border">
 					<div className="loginform-header">
-						<Heading color="black" className="loginform-header-text">
-							Register
-						</Heading>
+						<div className="loginform-header-text">Register</div>
 					</div>
 					<div>
 						{next ? (

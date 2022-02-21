@@ -262,7 +262,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .add-new-label {
-	height: 35px;
+	height: 20px;
 	font-size: 16px !important;
 }
 
@@ -333,17 +333,18 @@ font-family: 'Roboto Mono', monospace;
 .loginform-header-text {
 	font-family: Roboto Mono;
 	font-weight: 300 !important;
-	font-size: 30px !important;
+	font-size: 30px;
+	color: black;
 	margin: 0 !important;
 }
 
 .loginform-border {
 	border: 3px solid #60ebe1;
 	width: 40%;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 1.8em;
-	padding-right: 1.8em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
 	border-radius: 20px;
 }
 
@@ -388,4 +389,14 @@ font-family: 'Roboto Mono', monospace;
 .loginform-button-text {
 	font-family: Roboto Mono;
 	font-weight: 400 !important;
+}
+
+@media (max-width: 1200px) {
+	.loginform-header-text {
+		font-size: 24px !important;
+	}
+
+	.loginform-eslogan {
+		font-size: 24px;
+	}
 }

@@ -1,4 +1,4 @@
-import { Box, Button, Form, FormField, Heading, Text, TextInput } from 'grommet'
+import { Box, Button, Form, FormField, Text, TextInput } from 'grommet'
 import React from 'react'
 
 const LoginForm = () => {
@@ -10,9 +10,7 @@ const LoginForm = () => {
 			<div className="loginform-formulario">
 				<Form className="loginform-border">
 					<div className="loginform-header">
-						<Heading color="black" className="loginform-header-text">
-							Login
-						</Heading>
+						<div className="loginform-header-text">Login</div>
 					</div>
 					<div>
 						<FormField className="login-form-label" label="email">
