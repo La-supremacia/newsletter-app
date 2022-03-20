@@ -8,6 +8,17 @@
 	--morado: rgb(125, 76, 219) !important;
 }
 
+/* Unicos */
+#root {
+	height: 100%;
+	min-height: 100vh;
+}
+
+/* Clases */
+.bg-gradient {
+	background: #81fced;
+}
+
 /* Etiquetas */
 body {
 	margin: 0;
@@ -20,13 +31,372 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Unicos */
-#root {
-	height: 100%;
-	min-height: 100vh;
+/*
+AZULCLARO #81FCED
+MORADOGROMMET #7D4CDB
+moradooscuro #5E21BC
+*/
+
+/*
+font-family: 'Roboto Mono', monospace;
+*/
+
+/*GENERAL*/
+
+.ml {
+	margin-left: 2rem;
 }
 
-/* Clases */
-.bg-gradient {
-	background: linear-gradient(135deg, var(--azulClaro) 20%, var(--morado) 80%);
+.general-title {
+	font-size: 25px;
+	font-family: Roboto Mono;
+	margin: 0;
+}
+
+/*LOGIN*/
+
+.login-welcome {
+	width: 100%;
+	height: 100%;
+}
+
+.login-img {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+}
+
+.login-img-image {
+	position: relative;
+	top: 60px;
+}
+
+.login-footer {
+	width: 100%;
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 0;
+}
+
+/*BUTTONMENU*/
+
+.button-menu-container {
+	background-color: #81fced;
+	height: 50px;
+	width: 40px;
+	position: fixed;
+	left: 0;
+	top: 15px;
+	cursor: pointer;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+
+.sidebar-button-menu-container {
+	background-color: #81fced;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	left: 168px;
+	bottom: 9px;
+	cursor: pointer;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+
+.button-menu-icon {
+	fill: #fff !important;
+}
+
+.header {
+	height: 70px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 1rem;
+	font-family: Roboto Mono;
+	font-style: normal;
+	line-height: 40px;
+	color: #5e21bc;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	margin-left: 0.5rem;
+	height: 45px;
+	width: 45px;
+}
+
+.footer {
+	background-color: #5e21bc;
+	height: 120px;
+	font-family: Roboto Mono;
+	color: white;
+	flex-direction: column;
+}
+
+.footer-content {
+	height: 70%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.footer-right {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icon {
+	margin-top: 30px;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-right: 2rem;
+}
+
+.footer-link {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	font-weight: bold !important;
+}
+
+.footer-menu-container {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.footer-up-icon {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.contacts-main {
+	min-height: 80vh;
+}
+
+.contacts-show {
+	display: flex;
+	align-items: center;
+	margin-left: 2.5rem;
+}
+
+.contacts-show-select-container {
+	margin-left: 1rem;
+}
+
+.contacts-title-container {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-table-container {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+}
+
+.contacts-barup {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts-button-add {
+	margin-right: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.contact-pointer {
+	cursor: pointer;
+}
+
+.modal-contact-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+}
+
+.modal-contact-span-container {
+	background-color: #ababab;
+	width: 100%;
+	height: 0.5px;
+}
+
+.add-new-contact-form {
+	padding: 1rem;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.add-new-label {
+	height: 20px;
+	font-size: 16px !important;
+}
+
+.modal-contact-margin {
+	margin-bottom: 0.5rem;
+}
+
+/*FORMULARIO DE LOGIN*/
+
+.login-form {
+	width: 100%;
+	height: 100%;
+}
+
+.loginform-mt {
+	height: 20%;
+}
+
+.loginform-container {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+}
+
+.loginform-eslogan {
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	font-family: Roboto Mono;
+	margin-left: 15%;
+	margin-right: 15%;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+.loginform-formulario {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
+}
+
+.login-form-link {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #7d4cdb;
+	font-weight: bold !important;
+}
+
+.login-form-link:hover {
+	text-decoration: underline;
+}
+
+.login-form-label {
+	border-bottom: 2px solid #9060eb !important;
+	font-weight: normal;
+	font-size: 15px;
+	margin-bottom: 0 !important;
+}
+
+.loginform-header {
+	display: flex;
+	justify-content: center;
+}
+
+.loginform-header-text {
+	font-family: Roboto Mono;
+	font-weight: 300 !important;
+	font-size: 30px;
+	color: black;
+	margin: 0 !important;
+}
+
+.loginform-border {
+	border: 3px solid #60ebe1;
+	width: 40%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 20px;
+}
+
+.loginform-button-submit {
+	padding-left: 2em !important;
+	padding-right: 2em !important;
+	font-weight: 500 !important;
+}
+
+.registerform-border {
+	border: 3px solid #60ebe1;
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+}
+
+.register-form-label {
+	margin: 0 !important;
+}
+
+.register-button-back {
+	font-weight: 500 !important;
+}
+
+.register-text-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto Mono;
+	font-weight: 400 !important;
+}
+
+.register-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginform-button-text {
+	font-family: Roboto Mono;
+	font-weight: 400 !important;
+}
+
+@media (max-width: 1200px) {
+	.loginform-header-text {
+		font-size: 24px !important;
+	}
+
+	.loginform-eslogan {
+		font-size: 24px;
+	}
 }

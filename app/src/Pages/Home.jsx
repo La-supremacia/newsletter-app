@@ -1,11 +1,14 @@
 import React from 'react'
-import { Button } from 'grommet'
+import Sidebar from '../Layout/Sidebar'
+import Header from '../Layout/Header'
+import Footer from '../Layout/Footer'
 
 const Home = () => {
 	return (
 		<div>
-			<h1>Home</h1>
-			<Button primary label="Hola Mundo" />
+			<Header />
+			<Sidebar />
+			<Footer />
 		</div>
 	)
 }

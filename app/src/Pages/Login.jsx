@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import adorno from '../Images/login-adorno.svg'
+import logo from '../Images/login-logo.svg'
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet'
 import RegisterForm from '../Components/RegisterForm'
+import LoginForm from '../Components/LoginForm'
 
 const Login = () => {
 	const [isLoginRouter, setIsLoginRoute] = useState(true)
-
+	useEffect(() => {
+		if (window.location.pathname === '/register') {
+			setIsLoginRoute(false)
+		}
+	}, [])
 	return (
 		<div>
 			<Grommet full>
@@ -23,25 +30,43 @@ const Login = () => {
 							{size === 'medium' ? (
 								<Box
 									gridArea="nav"
-									background="light-5"
 									className="bg-gradient"
 									justify="center"
 									align="center"
 								>
-									<div className="login-welcome">imagen</div>
+									<div className="login-welcome">
+										<div className="login-img">
+											<img className="login-img-image" src={logo} alt="Logo de adorno" />
+										</div>
+										<div
+											className="login-footer"
+											style={{ backgroundImage: 'url(' + adorno + ')' }}
+										></div>
+									</div>
 								</Box>
 							) : null}
 							<Box gridArea="main" background="white" justify="center" align="center">
 								<main className="login-form">
 									{isLoginRouter ? (
-										<Link onClick={() => setIsLoginRoute(false)} to="/register">
-											Register
-										</Link>
+										<>
+											<LoginForm />
+											<Link
+												className="login-form-link"
+												onClick={() => setIsLoginRoute(false)}
+												to="/register"
+											>
+												I don’t have an account
+											</Link>
+										</>
 									) : (
 										<>
 											<RegisterForm />
-											<Link onClick={() => setIsLoginRoute(true)} to="/login">
-												Ya tengo cuenta
+											<Link
+												className="login-form-link"
+												onClick={() => setIsLoginRoute(true)}
+												to="/login"
+											>
+												I have an account
 											</Link>
 										</>
 									)}
